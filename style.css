@@ -2,8 +2,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    
-
 }
 
 
@@ -74,7 +72,6 @@ body{
    }
 
 .contain {
-    width: 80%;
     margin: auto;
     overflow: hidden;
 }
@@ -82,7 +79,8 @@ body{
 
 
 .box-1{
-    
+    margin-left: 50px;
+    margin-right: 50px;
     padding: 20px;
     border-radius: 15px;
     margin-top: 100px;
@@ -109,89 +107,131 @@ h1 {
     text-align: center;
 }
 
+/*inicio de card css*/
 
-img{ display: inline-block;
-max-width: 100%;
-max-height: 100%;
-border-radius: 5px;
-overflow: hidden;
-transition: .5s;
+
+.container{
+	margin: 30px;
 }
 
-
-.card{ display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    margin: 5px;
-    box-shadow:5px 5px 20px black;
-overflow: hidden;
-border-radius: 10px;
-
-
-}
-.box-2{
-    display: flex;
-    justify-content: center;
-    height: 70vh;
-    align-items: center;
-   
+.row{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
 }
 
-.intro{ display: flex;
-    box-sizing:border-box;
-    justify-content: center;
-    position: absolute;
-    padding: 6px;
-    color:  white;
-    bottom: -248px;
-    transition: .3s;
-    overflow: hidden;
-    visibility: hidden;
-    background-color: rgba(29,30,34, 0.8);
+.image{
+	position: relative;
+	flex: 1;
+	max-width: 460px;
+	height: 645px;
+	margin: 20px;
+	overflow: hidden;
     border-radius: 10px ;
+	transition: 0.6s;
+    box-shadow: 11px 7px 20px 0px rgba(0,0,0,0.75);
+
 }
 
-.intro h2, p { display: block;
-}
-
-
-h2{
-    margin: 5px;
-    font-size:  20px;
-    text-align: center;
-    margin-bottom: 15px;
-}
-span{
-    font-weight: bold;
-    
-}
-.card p{
-    visibility: hidden;
-    opacity: 0;
-    padding: 10px;
-}
-
-.card:hover .intro{
-    height: 220px;
-    bottom: -248px;
-    visibilitY: visible;
-    transition: .5s;
-
-    }
-.card:hover p {
+.image img{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px ; 
+	position: relative;
+	vertical-align: top;
+	transition: 0.6s;
     opacity: 1;
-    visibility: visible;
-        }
-.card:hover img {
-    transform:scale(1.1) rotate(-2deg);
-            }
 
-.box-2 p {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center;
 }
 
+
+.image .details{
+	z-index: 1;
+	position: absolute;
+	top: 0;
+	right: 0;
+	color: #fff;
+	width: 100%;
+	height: 100%;
+}
+
+.image .details h2{
+	text-align: center;
+	font-size: 35px;
+	text-transform: uppercase;
+	font-weight: 300;
+	margin-top: 15px;
+	transition: 0.6s;
+    background-color: rgba(29,30,34, 0.8);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 20px;
+    transition: width 0.5s;
+    visibility: hidden;
+}
+
+span{
+    font-weight: 900;
+}
+.image:hover .details h2{
+    width: 190px;
+    visibility: visible;
+}
+
+
+.image .details p{
+	margin: 30px 30px 0 30px;
+	font-size: 18px;
+	font-weight: 600;
+	text-align: center;
+	opacity: 0;
+	transition: 0.6s;
+	transition-property: opacity, transform;
+}
+
+.image:hover .details p{
+	opacity: 1;
+	transform: translateY(-40px);
+
+}
+
+.more{position: inherit;
+    visibility: hidden;
+    padding: 15px;
+	background: rgba(29,30,34, 0.8);
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	bottom: -250px;
+	transition-property: bottom;
+    max-width: 460px;
+    overflow: hidden;
+    transition: 0.6s;
+
+}
+
+.image:hover .more{
+	bottom: 0;
+    visibility: visible;
+
+}
+
+.more p{
+    padding-top: 40px;
+    padding-right: 20px;
+text-align: center;
+	color: white;
+}
+
+
+.image:hover img {
+    transform:scale(1.1) rotate(-2deg);
+transition: 0.6s;
+}
+
+/*termino de card css*/
 
 .box-3 {
     padding: 20px;
@@ -204,10 +244,3 @@ span{
     margin: 50px auto;
     border: 25px;
 }
-
-.arm{
-height: 500px;
-margin: 50px;
-box-shadow:5px 5px 20px black;
-overflow: hidden;
-border-radius: 10px;}
