@@ -202,7 +202,7 @@ span{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	bottom: -390px;
+	bottom: -690px;
 	transition-property: bottom;
     max-width: 460px;
     overflow: hidden;
