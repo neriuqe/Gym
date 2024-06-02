@@ -71,10 +71,7 @@ body{
     margin: 0;
    }
 
-.contain {
-    margin: auto;
-    overflow: hidden;
-}
+
 
 
 
@@ -243,7 +240,7 @@ transition: 0.6s;
     border: 25px;
 }
 
-.box-4{
+.box-4{ 
 
         padding: 20px;
         border-radius: 15px;
@@ -254,5 +251,16 @@ transition: 0.6s;
         width: 4000px;
         margin: 10px;
         border: 25px;
-    
+        text-align: center;
 }
+
+
+.row-1{
+    display: flex;
+    justify-content: center;
+}
+
+.box-4 h1{
+    padding: 30px;
+}
+
