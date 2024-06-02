@@ -130,8 +130,8 @@ h1 {
 }
 
 .image img{
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 110%;
+    max-height: 110%;
     border-radius: 10px ; 
 	position: relative;
 	vertical-align: top;
@@ -191,7 +191,7 @@ span{
 
 }
 
-.more{position: inherit;
+.more{position: absolute;
     visibility: hidden;
     padding: 15px;
 	background: rgba(29,30,34, 0.8);
@@ -201,7 +201,7 @@ span{
 	align-items: center;
 	bottom: -690px;
 	transition-property: bottom;
-    max-width: 460px;
+    max-width: 100%;
     overflow: hidden;
     transition: 0.6s;
 
@@ -261,6 +261,20 @@ transition: 0.6s;
 }
 
 .box-4 h1{
-    padding: 30px;
+margin: 20px;
+padding-bottom: 30px;
 }
 
+.box-4 ul {margin: 20px;}
+
+.box-5 { 
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 100px;
+    margin-bottom: 70px;
+    font-size: 18px;
+    background-color: rgba(29,30,34, 0.8);
+    width: 400px;
+    margin: 50px auto;
+    border: 25px;
+}
