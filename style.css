@@ -6,7 +6,7 @@
 
 
 
-li, a, button {
+ a, button {
     font-family: Verdana, Helvetica, sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -70,11 +70,7 @@ body{
     line-height: 2em;
     margin: 0;
    }
-
-
-
-
-
+   
 .box-1{
     margin-left: 50px;
     margin-right: 50px;
@@ -246,10 +242,10 @@ transition: 0.6s;
         border-radius: 15px;
         margin-top: 100px;
         margin-bottom: 70px;
-        font-size: 18px;
+        font-size: 25px;
         background-color: rgba(29,30,34, 0.8);
         width: 4000px;
-        margin: 10px;
+        margin: 30px;
         border: 25px;
         text-align: center;
 }
@@ -263,9 +259,24 @@ transition: 0.6s;
 .box-4 h1{
 margin: 20px;
 padding-bottom: 30px;
+font-weight: bold;
 }
 
-.box-4 ul {margin: 20px;}
+.box-4 h3 {
+    font-weight: bold;
+}
+
+.box-4 ul {
+padding-top: 15px;
+margin: 20px; 
+display: block;
+
+}
+
+.box-4 li {
+    color:#f5f2d0; 
+ 
+}
 
 .box-5 { 
     padding: 20px;
