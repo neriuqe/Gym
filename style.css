@@ -297,5 +297,7 @@ display: block;
 .video {display: flex;
 justify-content: center;}
 
-
+.image {
+    filter: drop-shadow(1px 1px 20px #f5f2d0);
+}
 
