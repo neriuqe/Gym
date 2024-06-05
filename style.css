@@ -289,3 +289,13 @@ display: block;
     margin: 50px auto;
     border: 25px;
 }
+
+.box-4 ul li{
+    margin-bottom: 15px;
+}
+
+.video {display: flex;
+justify-content: center;}
+
+
+

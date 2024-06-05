@@ -174,23 +174,100 @@
   </div>
 
 
+  <div class="video">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/_ETTFD90dYE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
 
 
 
+  <div class="box-5">
+    <h1>Rutina: PPLxAS</h1>
+    </div>
 
+  <div class="row-1">
+    <div class="box-4">
+      <h3>Lunes</h3>
+      <ul><li>Pecho</li><li>Tricep</li><li>Hombro (Front & Side)</li></ul>
+    </div>
+    <div class="box-4">
+      <h3>Martes</h3>
+      <ul><li>Espalda (2 lats 1 Upper Back)</li><li>Bicep</li></ul>
+    </div>
+    <div class="box-4">
+      <h3>Miercoles</h3>
+      <ul><li>Pierna</li></ul>
+    </div>
+    <div class="box-4">
+      <h3>Jueves</h3>
+      <ul><li>Pecho</li><li>Espalda (2 Upper Back 1 Lats)</li></ul>
+    </div>
+    <div class="box-4">
+      <h3>Viernes</h3>
+      <ul><li>Brazo</li></ul>
+    </div>
+  </div>
 
+  <div class="hero">
+    <div class="hero-overlay">
+      <h1>Fitness Journey</h1>
+      <h2>Discipline over motivation</h2>
+      <img src="ye.jpg" alt="Fitness Hero" />
+    </div>
+  </div>
 
+  <style>
+    .hero {
+      position: relative;
+      width: 100%;
+      height: 600px;
+      overflow: hidden;
+    }
 
+    .hero-overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: #fff;
+    }
 
+    .hero-overlay h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
 
+    .hero-overlay h2 {
+      font-size: 32px;
+      margin-bottom: 30px;
+    }
 
+    .hero-overlay img {
+      border-radius: 50%;
+      width: 200px;
+      height: 200px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      animation: spin 5s linear infinite;
+    }
 
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
 
+    .hero-overlay:hover img {
+      animation-play-state: paused;
+    }
 
+    .hero-overlay:hover h1 {
+      animation: fadeIn 1s ease-in-out;
+    }
 
-
-
-
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+  </style>
 
 
 </body>
